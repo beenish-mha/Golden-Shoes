@@ -9,7 +9,9 @@ router.route('/')
 
 //get shoe by id
 router.route('/id/:_id')
-.get(shoesController.getById);
+.get(shoesController.getById)
+.put(shoesController.replaceShoe)
+.delete(shoesController.deleteShoeById);
 
 //get shoe by color
 router.route('/color/:color')
