@@ -6,6 +6,18 @@ module.exports = {
         res.status(200).json(shoes)
     },
 
+    getById: async(req,res,next) => {
+        const shoeId = req.params._id;
+        const shoe = await Shoes.findById(shoeId);
+        res.status(200).json(shoe);
+    },
+
+    getAllByColor : async(req,res,next)=>{
+        const color = req.params.color;
+        const shoes = await Shoes.find({Color:color});
+        res.status(200).json(shoes);
+    },
+
     addShoe : async(req,res,next) =>{
         const newshoe = new Shoes ({
             Style: req.body.Style,
