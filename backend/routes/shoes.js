@@ -4,6 +4,6 @@ const shoesController = require("../controllers/shoesController");
 
 router.route('/')
 .get(shoesController.getAll)
-.post();
+.post(shoesController.addShoe);
 
 module.exports = router;
