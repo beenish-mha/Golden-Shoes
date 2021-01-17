@@ -1,15 +1,13 @@
 const Shoes = require("../models/Shoes");
 
 module.exports = {
-    getAll : (req, res)=>{
-        Shoes.find()
-        .then (shoes=>res.status(200).json(shoes))
-        .catch(err=> res.status(400)
-        .json("error " +err));
+    getAll : async(req, res, next)=>{
+        const shoes = await Shoes.find();
+        res.status(200).json(shoes)
     },
 
-    addShoe : (req,res) =>{
-        const shoe = new Shoes ({
+    addShoe : async(req,res,next) =>{
+        const newshoe = new Shoes ({
             Style: req.body.Style,
             Color: req.body.Color,
             Size: req.body.Size,
@@ -20,11 +18,9 @@ module.exports = {
             Ratings: req.body.Ratings,
             Reviews: req.body.Reviews
         })
-        shoe.save()
-        .then (data => {
-            res.status(200).json(data)
-        })
-        .catch(err=> res.status(400)
-        .json("error " +err));
+        
+            const shoe = await newshoe.save()
+            res.status(200).json(shoe);
+        
     }
 }
