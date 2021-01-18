@@ -11,6 +11,20 @@ module.exports = {
         const shoe = await Shoes.findById(shoeId);
         res.status(200).json(shoe);
     },
+    replaceShoe: async(req, res, next)=>{
+        const shoeId = req.params._id;
+        const newShoe = req.body;
+        // console.log (shoeId);
+        // console.log(newShoe);
+        const replacedShoe = await Shoes.findByIdAndUpdate(shoeId, newShoe);
+        res.status(200).json(replacedShoe);
+    },
+    deleteShoeById: async(req, res, next) =>{
+        const shoeId = req.params._id;
+        const deletedShoe = await Shoes.findByIdAndDelete(shoeId);
+        res.status(200).json({Message: "shoe deleted"});
+
+    },
 
     getAllByColor : async(req,res,next)=>{
         const color = req.params.color;
