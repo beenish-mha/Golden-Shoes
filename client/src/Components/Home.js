@@ -61,9 +61,18 @@ const Home = ()=>{
    );
 
     return (
-        <div>
-        <h3 className = "home-heading">Good shoes take good places</h3>
-        <div>{showProducts()}</div>
+        <div>  
+             
+            <h3 className = "home-heading">
+                <span >
+                    <i class="shoe-icon fas fa-shoe-prints"/>
+                </span>
+                Good shoes take good you places!
+                <span >
+                    <i class=" shoe-icon fas fa-shoe-prints"/>
+                </span>
+            </h3>
+            <div>{showProducts()}</div>
         </div>
     )
 };

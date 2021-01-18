@@ -21,3 +21,16 @@ hr {
   margin: 0 auto;
   width: 80%;
 }
+span {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .shoe-icon {
+    display: none;
+  }
+  .home-heading {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
