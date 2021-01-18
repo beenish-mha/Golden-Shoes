@@ -1,9 +1,12 @@
-
-import './App.css';
+import React from "react";
+import {BrowserRouter} from "react-router-dom";
+import Header from "./Header";
 
 function App() {
   return (
-    <div><h1>Allah is great!</h1></div>
+    <BrowserRouter>
+    <Header/>
+    </BrowserRouter>
   );
 }
 
