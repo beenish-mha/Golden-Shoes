@@ -9,14 +9,23 @@
   text-decoration: underline;
 }
 
+.starIcon {
+  color: gold;
+}
+
 .home-heading {
   text-align: center;
 }
 
 .card-price {
   text-align: right;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
+img {
+  height: 300px;
+}
+
 hr {
   margin: 0 auto;
   width: 80%;

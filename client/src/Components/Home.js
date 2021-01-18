@@ -5,12 +5,37 @@ import "./home.css";
 const Home = ()=>{
     const showProducts = () =>(
         <div class="row">
-           <div class="col-sm-3">
+           
+            <div class="col-sm-4">
                 <Link to href="#" class="card-links">
                     <div class="card border-0">
                         <div class="card-body">
-                            <img className="card-img-top" src="https://images.unsplash.com/photo-1605317143724-025ceb00651c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGdvbGRlbiUyMHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"/>
+                            <img className="card-img-top" src="./images/pic2.jpg"/>
+                            <span>
+                                <h5 class="card-title">Golden shoe name</h5>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                            </span><p class="card-text">great shoe to wear</p>
+                            <p class="card-text card-price">£65</p>
+                        </div>
+                    </div>
+                </Link>
+                <hr/>
+            </div>
+            <div class="col-sm-4">
+                <Link to href="#" class="card-links">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <img className="card-img-top" src="./images/pic1.jpg"/>
                             <h5 class="card-title">Golden shoe name</h5>
+                            <span>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                                <i className="fa fa-star starIcon"/>
+                            </span>
                             <p class="card-text">great shoe to wear</p>
                             <p class="card-text card-price">£65</p>
                         </div>
@@ -18,38 +43,21 @@ const Home = ()=>{
                 </Link>
                 <hr/>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <Link to href="#" class="card-links">
                     <div class="card border-0">
                         <div class="card-body">
-                            <img className="card-img-top" src="https://images.unsplash.com/photo-1605317143724-025ceb00651c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGdvbGRlbiUyMHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"/>
+                            <img className="card-img-top" src="./images/pic3.jpg"/>
                             <h5 class="card-title">Golden shoe name</h5>
-                            <p class="card-text">great shoe to wear</p>
-                            <p class="card-text card-price">£65</p>
-                        </div>
-                    </div>
-                </Link>
-                <hr/>
-            </div>
-            <div class="col-sm-3">
-                <Link to href="#" class="card-links">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <img className="card-img-top" src="https://images.unsplash.com/photo-1605317143724-025ceb00651c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGdvbGRlbiUyMHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"/>
-                            <h5 class="card-title">Golden shoe name</h5>
-                            <p class="card-text">great shoe to wear</p>
-                            <p class="card-text card-price">£65</p>
-                        </div>
-                    </div>
-                </Link>
-                <hr/>
-            </div>
-            <div class="col-sm-3">
-                <Link to href="#" class="card-links">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <img className="card-img-top" src="https://images.unsplash.com/photo-1605317143724-025ceb00651c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGdvbGRlbiUyMHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"/>
-                            <h5 class="card-title">Golden shoe name</h5>
+                            <div className = "ratings">
+                                <span>
+                                    <i className="fa fa-star starIcon"/>
+                                    <i className="fa fa-star starIcon"/>
+                                    <i className="fa fa-star starIcon"/>
+                                    <i className="fa fa-star-half-o starIcon"/>
+                                </span>
+                             </div>
+                            
                             <p class="card-text">great shoe to wear</p>
                             <p class="card-text card-price">£65</p>
                         </div>
