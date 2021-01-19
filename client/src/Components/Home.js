@@ -7,7 +7,7 @@ const Home = ()=>{
     const showProducts = () =>(
         <div class="row">
             {data.shoes.map(shoe => (
-                <div class="col-sm-4">
+                <div class="col-md-4">
                 <Link to href="#" class="card-links">
                     <div class="card border-0">
                         <div class="card-body">
