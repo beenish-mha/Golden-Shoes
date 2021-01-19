@@ -15,6 +15,9 @@ const Ratings = (props) => {
                                     <i className={Ratings>=4?"fa fa-star": Ratings>=3.5?"fas fa-star-half-alt": "far fa-star"}/>
                                     <i className={Ratings>=5?"fa fa-star": Ratings>=4.5?"fas fa-star-half-alt": "far fa-star"}/>
                                 </span>
+                                <span class = "reviews">
+                                    {"(" + Reviews + ")"}
+                                </span>
                              </div>
     )
 
