@@ -1,6 +1,7 @@
 const data = {
     shoes:[
         {
+            _id : 1,
             Style: "heels",
             Color: "gold",
             Size: 5,
@@ -8,11 +9,12 @@ const data = {
             Quantity: 4,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 4.5,
             Reviews: 8,
             price: "£69.99"
         },
         {
+            _id : 2,
             Style: "Trainers",
             Color: "gold",
             Size: 10,
@@ -20,11 +22,12 @@ const data = {
             Quantity: 9,
             Gender: "male",
             Description: "very comfy",
-            Ratings: "4stars",
+            Ratings: 4.5,
             Reviews: 10,
             Price: "£49.99"
         },
         {
+            _id : 3,
             Style: "heels",
             Color: "oat",
             Size: 4,
@@ -32,11 +35,12 @@ const data = {
             Quantity: 3,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "5stars",
+            Ratings: 5,
             Reviews: 9,
             price: "£49.99"
         },
         {
+            _id : 4,
             Style: "dress shoes",
             Color: "gold",
             Size: 3,
@@ -44,11 +48,12 @@ const data = {
             Quantity: 4,
             Gender: "male",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 4,
             Reviews: 8,
             price: "£45.99"
         },
         {
+            _id : 5,
             Style: "high heels",
             Color: "dull gold",
             Size: 5,
@@ -56,7 +61,7 @@ const data = {
             Quantity: 4,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 3.5,
             Reviews: 8,
             price: "£79.99"
         }     

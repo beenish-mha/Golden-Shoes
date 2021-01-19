@@ -5,6 +5,7 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import SignIn from "./SignIn";
 import Signup from "./Signup";
+import Cart from "./Cart";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path = "/" component = {Home}/>
         <Route exact path = "/signup" component = {Signup}/>
         <Route exact path = "/signin" component = {SignIn}/>
+        <Route exact path = "/cart" component = {Cart}/>
         <Route component = {NotFound}/>
       </Switch>
     </main>

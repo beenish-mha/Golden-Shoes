@@ -30,6 +30,11 @@ const Header = () =>{
                     SignIn
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="./Cart" className="nav-link" >
+                    Cart
+                    </Link>
+                </li>
             </ul>
             </div>
         </div>
