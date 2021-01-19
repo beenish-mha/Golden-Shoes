@@ -1,54 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./home.css";
+import data from "./data";
 
 const Home = ()=>{
     const showProducts = () =>(
         <div class="row">
-           
-            <div class="col-sm-4">
+            {data.shoes.map(shoe => (
+                <div class="col-md-4">
                 <Link to href="#" class="card-links">
                     <div class="card border-0">
                         <div class="card-body">
-                            <img className="card-img-top" src="./images/pic2.jpg"/>
-                            <span>
-                                <h5 class="card-title">Golden shoe name</h5>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                            </span><p class="card-text">great shoe to wear</p>
-                            <p class="card-text card-price">£65</p>
-                        </div>
-                    </div>
-                </Link>
-                <hr/>
-            </div>
-            <div class="col-sm-4">
-                <Link to href="#" class="card-links">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <img className="card-img-top" src="./images/pic1.jpg"/>
-                            <h5 class="card-title">Golden shoe name</h5>
-                            <span>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                                <i className="fa fa-star starIcon"/>
-                            </span>
-                            <p class="card-text">great shoe to wear</p>
-                            <p class="card-text card-price">£65</p>
-                        </div>
-                    </div>
-                </Link>
-                <hr/>
-            </div>
-            <div class="col-sm-4">
-                <Link to href="#" class="card-links">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <img className="card-img-top" src="./images/pic3.jpg"/>
-                            <h5 class="card-title">Golden shoe name</h5>
+                            <img className="card-img-top" src={shoe.Image}/>
+                            <h5 class="card-title">{shoe.Color + " " + shoe.Style}</h5>
                             <div className = "ratings">
                                 <span>
                                     <i className="fa fa-star starIcon"/>
@@ -58,13 +22,16 @@ const Home = ()=>{
                                 </span>
                              </div>
                             
-                            <p class="card-text">great shoe to wear</p>
-                            <p class="card-text card-price">£65</p>
+                            <p class="card-text">{shoe.Description}</p>
+                            <p class="card-text card-price">{shoe.Price}</p>
                         </div>
                     </div>
                 </Link>
                 <hr/>
             </div>
+
+            ))}
+            
         </div>
    );
 
