@@ -1,6 +1,7 @@
 const data = {
     shoes:[
         {
+            _id : 1,
             Style: "heels",
             Color: "gold",
             Size: 5,
@@ -13,6 +14,7 @@ const data = {
             price: "£69.99"
         },
         {
+            _id : 2,
             Style: "Trainers",
             Color: "gold",
             Size: 10,
@@ -25,6 +27,7 @@ const data = {
             Price: "£49.99"
         },
         {
+            _id : 3,
             Style: "heels",
             Color: "oat",
             Size: 4,
@@ -37,6 +40,7 @@ const data = {
             price: "£49.99"
         },
         {
+            _id : 4,
             Style: "dress shoes",
             Color: "gold",
             Size: 3,
@@ -49,6 +53,7 @@ const data = {
             price: "£45.99"
         },
         {
+            _id : 5,
             Style: "high heels",
             Color: "dull gold",
             Size: 5,
