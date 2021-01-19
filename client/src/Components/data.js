@@ -11,7 +11,7 @@ const data = {
             Description: "very stylish",
             Ratings: 4.5,
             Reviews: 8,
-            Price: "£69.99"
+            Price: 69.99
         },
         {
             _id : 2,
@@ -24,7 +24,7 @@ const data = {
             Description: "very comfy",
             Ratings: 4.5,
             Reviews: 10,
-            Price: "£49.99"
+            Price: 49.99
         },
         {
             _id : 3,
@@ -37,7 +37,7 @@ const data = {
             Description: "very stylish",
             Ratings: 5,
             Reviews: 9,
-            Price: "£49.99"
+            Price: 49.99
         },
         {
             _id : 4,
@@ -50,7 +50,7 @@ const data = {
             Description: "very stylish",
             Ratings: 4,
             Reviews: 8,
-            Price: "£45.99"
+            Price: 45.99
         },
         {
             _id : 5,
@@ -63,7 +63,7 @@ const data = {
             Description: "very stylish",
             Ratings: 3.5,
             Reviews: 8,
-            Price: "£79.99"
+            Price: 79.99
         }     
     ]
 }

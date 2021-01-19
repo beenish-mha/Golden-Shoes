@@ -22,7 +22,7 @@ const ProductDetail = (props)=>{
                         <h3 >{product.Color} {product.Style}</h3>
                         <Ratings Ratings= {product.Ratings} Reviews = {product.Reviews}/>
                     </li>
-                    <li className="list-group-item"><h3>{product.Price}</h3></li>
+                    <li className="list-group-item"><h3>£{product.Price}</h3></li>
                     <li className="list-group-item">
                         <h4>Description:</h4>
                         {product.Description}

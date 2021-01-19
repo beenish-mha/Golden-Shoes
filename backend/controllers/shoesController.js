@@ -38,11 +38,12 @@ module.exports = {
             Color: req.body.Color,
             Size: req.body.Size,
             Image: req.body.Image,
-            Quantity: req.body.Quantity,
+            Stock: req.body.Stock,
             Gender: req.body.Gender,
             Description: req.body.Description,
             Ratings: req.body.Ratings,
-            Reviews: req.body.Reviews
+            Reviews: req.body.Reviews,
+            Price: req.body.Price
         })
         
             const shoe = await newshoe.save()
