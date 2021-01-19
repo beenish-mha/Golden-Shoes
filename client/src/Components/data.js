@@ -9,7 +9,8 @@ const data = {
             Gender: "Female",
             Description: "very stylish",
             Ratings: "4stars",
-            Reviews: 8
+            Reviews: 8,
+            price: "£69.99"
         },
         {
             Style: "Trainers",
@@ -20,7 +21,8 @@ const data = {
             Gender: "male",
             Description: "very comfy",
             Ratings: "4stars",
-            Reviews: 10
+            Reviews: 10,
+            Price: "£49.99"
         },
         {
             Style: "heels",
@@ -31,7 +33,8 @@ const data = {
             Gender: "Female",
             Description: "very stylish",
             Ratings: "5stars",
-            Reviews: 9
+            Reviews: 9,
+            price: "£49.99"
         },
         {
             Style: "dress shoes",
@@ -42,7 +45,8 @@ const data = {
             Gender: "male",
             Description: "very stylish",
             Ratings: "4stars",
-            Reviews: 8
+            Reviews: 8,
+            price: "£45.99"
         },
         {
             Style: "high heels",
@@ -53,7 +57,8 @@ const data = {
             Gender: "Female",
             Description: "very stylish",
             Ratings: "4stars",
-            Reviews: 8
+            Reviews: 8,
+            price: "£79.99"
         }     
     ]
 }
