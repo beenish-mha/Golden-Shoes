@@ -9,7 +9,7 @@ const data = {
             Quantity: 4,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 4.5,
             Reviews: 8,
             price: "£69.99"
         },
@@ -22,7 +22,7 @@ const data = {
             Quantity: 9,
             Gender: "male",
             Description: "very comfy",
-            Ratings: "4stars",
+            Ratings: 4.5,
             Reviews: 10,
             Price: "£49.99"
         },
@@ -35,7 +35,7 @@ const data = {
             Quantity: 3,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "5stars",
+            Ratings: 5,
             Reviews: 9,
             price: "£49.99"
         },
@@ -48,7 +48,7 @@ const data = {
             Quantity: 4,
             Gender: "male",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 4,
             Reviews: 8,
             price: "£45.99"
         },
@@ -61,7 +61,7 @@ const data = {
             Quantity: 4,
             Gender: "Female",
             Description: "very stylish",
-            Ratings: "4stars",
+            Ratings: 3.5,
             Reviews: 8,
             price: "£79.99"
         }     

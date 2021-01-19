@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Ratings from "./Ratings";
 
 const Product = (props) =>{
     const {shoe} = props;
@@ -10,14 +11,7 @@ const Product = (props) =>{
                         <div class="card-body">
                             <img className="card-img-top" src={shoe.Image}/>
                             <h5 class="card-title">{shoe.Color + " " + shoe.Style}</h5>
-                            <div className = "ratings">
-                                <span>
-                                    <i className="fa fa-star starIcon"/>
-                                    <i className="fa fa-star starIcon"/>
-                                    <i className="fa fa-star starIcon"/>
-                                    <i className="fa fa-star-half-o starIcon"/>
-                                </span>
-                             </div>
+                            <Ratings key= {shoe._id} Reviews= {shoe.Reviews} Ratings = {shoe.Ratings}/>
                             
                             <p class="card-text">{shoe.Description}</p>
                             <p class="card-text card-price">{shoe.Price}</p>
