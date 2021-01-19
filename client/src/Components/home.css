@@ -54,6 +54,10 @@ span {
   padding: 20px;
 }
 
+.loading {
+  height: 250px;
+}
+
 @media (max-width: 600px) {
   .shoe-icon {
     display: none;

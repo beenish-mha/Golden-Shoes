@@ -1,14 +1,25 @@
-import React from "react";
-import data from "./data";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import NotFound from "./NotFound";
 import Ratings from "./Ratings";
 
-const ProductDetail = (props)=>{
-    const shoe_id = parseInt(props.match.params.id);
-    const product = data.shoes.find((shoe) =>(shoe._id) === shoe_id)
-    if (!product){
-        return (<NotFound/>);
-    }
+    const ProductDetail = (props)=>{
+    const [shoes, setShoes] = useState([]);
+    const shoe_id = props.match.params.id;
+    
+    useEffect(() =>{
+        const fetchData = async() =>{
+            const {data} = await axios.get("/shoes");
+            setShoes(data)      
+        }
+        fetchData();
+    }, []);
+
+    const product = shoes.find((shoe) =>(shoe._id) === shoe_id)
+    
+            if (!product){
+                return (<NotFound/>);
+            }
     return (
        
     <div className="container">
