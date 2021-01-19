@@ -24,6 +24,18 @@
   color: rgba(0, 0, 0, 0.623);
 }
 
+.cart-card {
+  text-align: center;
+}
+
+.add-to-cart {
+  background-color: #0000009f;
+}
+.add-to-cart:hover,
+.add-to-cart:focus {
+  background-color: goldenrod;
+  color: #0000009f;
+}
 .card-price {
   text-align: right;
   margin: 0;
@@ -37,6 +49,7 @@ hr {
   margin: 0 auto;
   width: 80%;
 }
+
 span {
   padding: 20px;
 }

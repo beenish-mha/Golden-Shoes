@@ -21,7 +21,7 @@ const Home = ()=>{
                 <span >
                     <i class="shoe-icon fas fa-shoe-prints"/>
                 </span>
-                Good shoes take good you places!
+                Good shoes take you good places!
                 <span >
                     <i class=" shoe-icon fas fa-shoe-prints"/>
                 </span>

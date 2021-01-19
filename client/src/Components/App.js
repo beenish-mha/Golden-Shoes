@@ -6,6 +6,7 @@ import NotFound from "./NotFound";
 import SignIn from "./SignIn";
 import Signup from "./Signup";
 import Cart from "./Cart";
+import ProductDetail from "./ProductDetail"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path = "/" component = {Home}/>
         <Route exact path = "/signup" component = {Signup}/>
         <Route exact path = "/signin" component = {SignIn}/>
+        <Route path = "/ProductDetail/:id" component = {ProductDetail}/>
         <Route exact path = "/cart" component = {Cart}/>
         <Route component = {NotFound}/>
       </Switch>
