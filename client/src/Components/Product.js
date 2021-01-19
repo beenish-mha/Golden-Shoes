@@ -17,7 +17,7 @@ const Product = (props) =>{
                             <Ratings key= {shoe._id} Reviews= {shoe.Reviews} Ratings = {shoe.Ratings}/>
                             
                             <p class="card-text">{shoe.Description}</p>
-                            <p class="card-text card-price">{shoe.Price}</p>
+                            <p class="card-text card-price">£{shoe.Price}</p>
                         </div>
                     </div>
                 </Link>
