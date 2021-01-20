@@ -8,7 +8,7 @@ const Product = (props) =>{
     const id = shoe._id;
     return (
 <div class="col-md-4">
-                <Link to = {"./ProductDetail/"+id} class="card-links"
+                <Link to = {`/ProductDetail/${id}`} class="card-links"
                 >
                     <div class="card border-0">
                         <div class="card-body">

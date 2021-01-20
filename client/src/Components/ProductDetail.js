@@ -5,6 +5,7 @@ import Ratings from "./Ratings";
 
     const ProductDetail = (props)=>{
     const [shoes, setShoes] = useState([]);
+    
     const shoe_id = props.match.params.id;
     
     useEffect(() =>{
