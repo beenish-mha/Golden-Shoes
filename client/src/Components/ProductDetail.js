@@ -1,32 +1,33 @@
 import React, { useEffect, useState } from "react";
+
 import axios from "axios";
 import NotFound from "./NotFound";
 import Ratings from "./Ratings";
-import Cart from "./Cart";
+
+import Product from "./Product";
+import { Link } from "react-router-dom";
 
     const ProductDetail = (props)=>{
     const [shoes, setShoes] = useState([]);
+    const[product, setProduct]= useState([]);
     const [cartItems, setCartItems] = useState([]);
     const shoe_id = props.match.params.id;
     
     useEffect(() =>{
         const fetchData = async() =>{
-            const {data} = await axios.get("/shoes");
-            setShoes(data)      
+
+            const {data} = await axios.get(`/shoes/id/${shoe_id}`);
+            setProduct(data); 
+            setCartItems(data) ;
         }
+        
         fetchData();
     }, []);
 
-    const addToCart = () => {
-        console.log ("Allah jee madad");
-        <Cart></Cart>
-    }
-
-    const product = shoes.find((shoe) =>(shoe._id) === shoe_id)
-    
             if (!product){
                 return (<NotFound/>);
             }
+
     return (
        
     <div className="container">
@@ -54,7 +55,9 @@ import Cart from "./Cart";
                             <span>In Stock</span>}
                         </h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button"onClick = {addToCart} className=" add-to-cart btn btn-primary btn-lg btn-block">Add to shopping Bag</button>
+                       
+                        {product.Stock > 0 && <Link to={{pathname:'/cart', cartItems:{cartItems}}} className="btn btn-primary">Add to the basket</Link>}
+                        
                         
                     </div>
                 </div>

@@ -18,6 +18,7 @@ function App() {
         <Route exact path = "/signup" component = {Signup}/>
         <Route exact path = "/signin" component = {SignIn}/>
         <Route exact path = "/cart" component = {Cart}/>
+        <Route exact path = "/cart/:id" component = {Cart}/>
         <Route exact path = "/ProductDetail" component = {ProductDetail}/>
         <Route path = "/ProductDetail/:id" component = {ProductDetail}/>
         <Route component = {NotFound}/>

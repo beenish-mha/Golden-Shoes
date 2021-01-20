@@ -34,7 +34,7 @@ const Header = () =>{
                 </li>
                 <li className="nav-item">
                 
-                    <Link to={{pathname:'/cart', cartItems: {cartItems}}} className="nav-link" >
+                    <Link to="/cart" className="nav-link" >
                         <i class="fas fa-shopping-bag">1</i>
                     </Link>
                 </li>
