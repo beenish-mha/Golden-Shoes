@@ -1,14 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import "./App.css";
 
 const Header = () =>{
 
-    const refreshPage = () =>(
-        window.location.reload()
-    )
-
-
+        const[cartItems, setCartItems] = useState([]);
 
     const showNavigation = () => (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,8 +33,9 @@ const Header = () =>{
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/Cart" className="nav-link" >
-                    Cart
+                
+                    <Link to={{pathname:'/cart', cartItems: {cartItems}}} className="nav-link" >
+                        <i class="fas fa-shopping-bag">1</i>
                     </Link>
                 </li>
             </ul>

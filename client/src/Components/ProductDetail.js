@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NotFound from "./NotFound";
 import Ratings from "./Ratings";
+import Cart from "./Cart";
 
     const ProductDetail = (props)=>{
     const [shoes, setShoes] = useState([]);
-    
+    const [cartItems, setCartItems] = useState([]);
     const shoe_id = props.match.params.id;
     
     useEffect(() =>{
@@ -15,6 +16,11 @@ import Ratings from "./Ratings";
         }
         fetchData();
     }, []);
+
+    const addToCart = () => {
+        console.log ("Allah jee madad");
+        <Cart></Cart>
+    }
 
     const product = shoes.find((shoe) =>(shoe._id) === shoe_id)
     
@@ -48,7 +54,7 @@ import Ratings from "./Ratings";
                             <span>In Stock</span>}
                         </h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className=" add-to-cart btn btn-primary btn-lg btn-block">Add to shopping Bag</button>
+                        <button type="button"onClick = {addToCart} className=" add-to-cart btn btn-primary btn-lg btn-block">Add to shopping Bag</button>
                         
                     </div>
                 </div>

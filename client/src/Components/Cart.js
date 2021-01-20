@@ -1,9 +1,11 @@
 import React from "react";
 
-const Cart = () => {
-    return (
+const Cart = (props) => {
+    const {cartItems} = props.location.cartItems;
+    console.log (props.location.cartItems);
+      return (
         <>
-        <h3>this is a cart page</h3>
+        {cartItems.length === 0 && <div>Cart is empty!</div>}
         </>
     )
 }
