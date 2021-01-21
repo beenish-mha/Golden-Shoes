@@ -4,7 +4,9 @@ body {
 
 .logo {
   color: goldenrod;
-  color: ;
+}
+.logo:hover {
+  color: #0000009f;
 }
 
 .card-links {

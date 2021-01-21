@@ -7,7 +7,7 @@ const Mail = () => {
     function sendEmail(event) {
         event.preventDefault();
 
-    emailjs.sendForm('gmail', 'youtube_template', event.target, 'user_JABO21I8Gm6sxByJH17Nu')
+    emailjs.sendForm('gmail', 'template_4xoap5t', event.target, "beeni.khurram@gmail.com")
         .then((result) => {
             console.log(result.text);
         }, (error) => {
