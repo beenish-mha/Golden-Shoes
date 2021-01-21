@@ -35,6 +35,7 @@ body {
 .add-to-cart {
   background-color: #0000009f;
 }
+
 .add-to-cart:hover,
 .add-to-cart:focus {
   background-color: goldenrod;
@@ -62,27 +63,44 @@ span {
   height: 250px;
 }
 
-.social-media {
-  text-align: right;
+.email-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.email-container button {
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-.foot-container {
-  padding: 20px 10px;
-  margin-top: 70px;
-  height: 50px;
-  width: 100%;
-  background-color: #eceff1;
+.btn-send-email {
+  background-color: #0000009f;
+  color: goldenrod;
+}
+
+.footer-a {
+  text-decoration: none;
+  padding-bottom: 50px;
+}
+.footer-ul li {
+  color: #0000009f;
+  padding-bottom: 10px;
+}
+
+.footer-h6 {
+  margin-top: 20px;
+}
+
+.footer-email {
+  color: #0000009f;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.footer-email :hover {
+  color: rgba(255, 217, 0, 0.678);
 }
 
 .delivery {
   padding-right: 60px;
-}
-
-.copyrights {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  padding: 0;
 }
 
 @media (max-width: 600px) {

@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
         return () =>{
             unMounted = true;
         }
-    },[]);
+    },[items]);
 
             if (!product){
                 return (<NotFound/>);

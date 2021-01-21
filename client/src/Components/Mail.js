@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Mail = () => {
 
     const [name, setName] = useState("");
@@ -11,11 +12,15 @@ const Mail = () => {
         event.preventDefault();
     console.log ("Thank you " + name + " for sending email someone will contact you soon")
     setSendMessage(true);
+    event.value="";
+    
     }
+    console.log("this is "+sendMessage);
 
     return(
-        
-        <div className="col-sm-6"> 
+
+        <div class="d-flex justify-content-center">
+        <div className="col-sm-6 email-container "> 
             <form onSubmit={handleSubmit}>
                 <div class="input-group mb-3">
                     <input type="text" name = "name" value={name} onChange={e => setName(e.target.value)} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
@@ -23,14 +28,17 @@ const Mail = () => {
                 <div class="input-group mb-3">
                     <input type="email" name = "email" value={email}  onChange={e => setEmail(e.target.value)} class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1"/>
                 </div>
-                <div class="input-group" name = "message"  value = {message} onChange={e => setMessage(e.target.value)}>
-                    <span class="input-group-text">Enter your Message</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                <div class="input-group" name = "message"  value = {message} onChange={e => setMessage(e.target.value)}> 
+            
+                    <textarea class="form-control" rows="10" aria-label="With textarea" placeholder="Message here..."></textarea>
                 </div>
-                <button type="submit" value = "submit">Submit Your Message</button>
+                   
+                    <button type="submit" value = "submit" class="btn btn-primary" >Submit Your Message</button>
+                
             </form>
-
-            {sendMessage ? <p>Thank u</p>: <></>}
+            {sendMessage ?  <div><h4>Thank you for your email some one will contact you soon</h4></div>:<></>}
+            
+        </div>
         </div>
   )
     
