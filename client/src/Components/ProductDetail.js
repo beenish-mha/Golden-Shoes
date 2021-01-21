@@ -3,26 +3,32 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NotFound from "./NotFound";
 import Ratings from "./Ratings";
-
-import Product from "./Product";
 import { Link } from "react-router-dom";
 
     const ProductDetail = (props)=>{
-    const [shoes, setShoes] = useState([]);
+  
     const[product, setProduct]= useState([]);
-    const [cartItems, setCartItems] = useState([]);
+    const [items, setItems] = useState([]);
     const shoe_id = props.match.params.id;
     
     useEffect(() =>{
-        const fetchData = async() =>{
+        let unMounted = false;
 
-            const {data} = await axios.get(`/shoes/id/${shoe_id}`);
-            setProduct(data); 
-            setCartItems(data) ;
+        if (!unMounted){
+            const fetchData = async() =>{
+
+                const {data} = await axios.get(`/shoes/id/${shoe_id}`);
+                setProduct(data); 
+                setItems(data) ;
+            }
+            
+            fetchData();
         }
-        
-        fetchData();
-    }, []);
+  
+        return () =>{
+            unMounted = true;
+        }
+    },[shoe_id]);
 
             if (!product){
                 return (<NotFound/>);
@@ -56,7 +62,7 @@ import { Link } from "react-router-dom";
                         </h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                        
-                        {product.Stock > 0 && <Link to={{pathname:'/cart', cartItems:{cartItems}}} className="btn btn-primary">Add to the basket</Link>}
+                        {product.Stock > 0 && <Link to={{pathname:'/cart', setItems:{items}}} className="btn btn-primary">Add to the basket</Link>}
                         
                         
                     </div>

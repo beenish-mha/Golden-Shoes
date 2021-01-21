@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import "./App.css";
 
 const Header = () =>{
-
-        const[cartItems, setCartItems] = useState([]);
 
     const showNavigation = () => (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
