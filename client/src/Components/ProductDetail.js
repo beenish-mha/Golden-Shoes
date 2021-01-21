@@ -60,7 +60,7 @@ import { Link } from "react-router-dom";
                             <span>Out of Stock</span>): 
                             <span>In Stock</span>}
                         </h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">“I still have my feet on the ground, I just wear better shoes.” – Oprah Winfrey</p>
                        
                         {product.Stock > 0 && <Link to={{pathname:'/cart', setItems:{items}}} className="btn btn-primary">Add to the basket</Link>}
                         

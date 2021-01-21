@@ -24,7 +24,7 @@ const Footer = () =>{
             <a href="#!" class="text-dark footer-a">Terms and Conditions</a>
           </li>
           <li>
-            <a href="#!" class="text-dark footer-a">Link 4</a>
+            <a href="#!" class="text-dark footer-a">Delivery Information</a>
           </li>
         </ul>
       </div>
@@ -49,6 +49,9 @@ const Footer = () =>{
             <p>01234 567890</p>
           </li>
         </ul>
+        <li>
+            <a href="#!" class="text-dark footer-a">Link 4</a>
+          </li>
       </div>
    
       <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
@@ -85,7 +88,7 @@ const Footer = () =>{
  
   <div class="text-center p-3" >
     © 2020 Copyright:
-    <a class="text-dark" href="#">GoldenShoes.com</a>
+    <a class="text-dark" href="#">GoldenShoe.com</a>
   </div>
 
 </footer>
