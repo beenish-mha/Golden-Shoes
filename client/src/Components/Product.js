@@ -4,15 +4,15 @@ import Ratings from "./Ratings";
 
 const Product = (props) =>{
     const {shoe} = props;
-    console.log ("products page" + shoe._id)
+    
     const id = shoe._id;
     return (
 <div class="col-md-4">
-                <Link to = {"./ProductDetail/"+id} class="card-links"
+                <Link to = {`/ProductDetail/${id}`} class="card-links"
                 >
                     <div class="card border-0">
                         <div class="card-body">
-                            <img className="card-img-top" src={shoe.Image}/>
+                            <img className="card-img-top" src={shoe.Image} alt={shoe.Style}/>
                             <h5 class="card-title">{shoe.Color + " " + shoe.Style}</h5>
                             <Ratings key= {shoe._id} Reviews= {shoe.Reviews} Ratings = {shoe.Ratings}/>
                             
